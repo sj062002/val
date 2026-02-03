@@ -198,6 +198,9 @@
     const result = document.getElementById("result");
     const hint = document.getElementById("hint");
 
+    // Force the hint text (prevents an old cached/overwritten string from sticking around)
+    hint.textContent = 'You say "no" and I will be forced to take Tedders and Winters 😈';
+
     /* ---------- CONFETTI ---------- */
     const confettiCanvas = document.getElementById("confettiCanvas");
 
@@ -300,6 +303,3 @@
   </script>
 </body>
 </html>
-
-
-
